@@ -80,7 +80,8 @@ const JobDetails = () => {
         />
 
         <>
-            <ScrollView showsVerticalScrollIndicator={false} refreshControl={  <RefreshControl refreshing={refreshing} onRefresh={onRefresh} /> } >
+            <ScrollView showsVerticalScrollIndicator={false} refreshControl={  
+              <RefreshControl refreshing={refreshing} onRefresh={onRefresh} /> } >
 
                 {isLoading ? (
                     <ActivityIndicator size="large" color={COLORS.primary} />
@@ -91,7 +92,7 @@ const JobDetails = () => {
                 ) : (
                     <View style = {{ padding:SIZES.medium, paddingBottom: 100 }}>
                         <Company
-                            companyLogo={data[0].employer.logo}
+                            // companyLogo={data[0].employer.logo}
                             jobTitle={data[0].job_title}
                             companyName={data[0].employer_name}
                             Location={data[0].job_country}
