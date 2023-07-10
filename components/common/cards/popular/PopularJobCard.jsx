@@ -26,6 +26,6 @@ const PopularJobCard = ({ item, selectedJob, handleCardPress }) => {
       </View>
     </TouchableOpacity>
   )
-}
+};
 
 export default PopularJobCard;

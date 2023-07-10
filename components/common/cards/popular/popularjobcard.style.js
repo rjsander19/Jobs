@@ -41,13 +41,13 @@ const styles = StyleSheet.create({
   infoWrapper: {
     flexDirection: "row",
     marginTop: 5,
-    justifyContent: "flex-start",
+    // justifyContent: "flex-start",
     alignItems: "center",
   },
   publisher: (selectedJob) => ({
     fontSize: SIZES.medium - 2,
     fontFamily: FONT.bold,
-    color: selectedJob === item.job_id ? COLORS.white : COLORS.primary,
+    // color: selectedJob === item.job_id ? COLORS.white : COLORS.primary,
   }),
   location: {
     fontSize: SIZES.medium - 2,
