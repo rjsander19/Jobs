@@ -6,3 +6,4 @@
 
 ## Resources
 - (https://www.youtube.com/watch?v=mJ3bGvy0WAY)
+- API used: (https://rapidapi.com/hub)
