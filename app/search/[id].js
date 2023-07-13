@@ -9,8 +9,8 @@ import { COLORS, icons, SIZES } from '../../constants'
 import styles from '../../styles/search';
 
 const JobSearch = () => {
-    const params = useSearchParams();
-    const router = useRouter()
+    const params = useSearchParams()
+    const router = useRouter();
 
     const [searchResult, setSearchResult] = useState([]);
     const [searchLoader, setSearchLoader] = useState(false);
