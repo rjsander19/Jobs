@@ -3,20 +3,27 @@ import { View, Text, Image } from 'react-native';
 
 import styles from './company.style';
 import { icons } from '../../../constants';
-import { checkImageURL } from '../../../utils';
+
+const defaultLogo = 'https://i.ibb.co/chsRn76/Screenshot-2023-07-13-at-1-21-17-PM.png';
 
 const Company = ({ companyLogo, jobTitle, companyName, location }) => {
   return (
     <View style={styles.container}>
       <View style={styles.logoBox}>
+      { companyLogo ? (
         <Image
-          source={{
-            uri: checkImageURL(companyLogo)
-            ? companyLogo
-            : "https://t4.ftcdn.net/jpg/05/05/61/73/360_F_505617309_NN1CW7diNmGXJfMicpY9eXHKV4sqzO5H.jpg", 
-            }}
-            style={styles.logoImage}
-          />
+          source={{ uri: companyLogo
+          }}
+          resizeMode="contain"
+          style={styles.logoImage}
+        />
+        ) : (
+          <Image
+          source={{ uri: defaultLogo }}
+          resizeMode="contain"
+          style={styles.logoImage}
+        />
+        )}
       </View>
 
         <View style={styles.jobTitleBox}>
